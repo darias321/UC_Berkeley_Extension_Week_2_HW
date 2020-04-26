@@ -4,16 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS link -->
+
     <link rel="stylesheet" href="styles.css" />
+
     <title>Quiz Homework</title>
   </head>
   <body>
-    <p id="timer"></p>
-    <p id="score">Score</p>
-    <div id="question"></div>
-    <div id="answers"></div>
-    <ul id="scores"></ul>
-    <button id="start">Start Quiz</button>
+    <!-- IDs for JS content -->
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">
+        <p id="timer">Time</p>
+        <p id="score">Score</p></span
+      >
+    </nav>
+
+    <!-- Initial card -->
+    <div class="card text-center">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h5 class="card-title">Coding Quiz Challenge</h5>
+        <div id="question"></div>
+        <div id="answers"></div>
+        <p class="card-text"></p>
+
+        <button id="start">Start Quiz</button>
+      </div>
+      <div class="card-footer text-muted"></div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.0.slim.js"
       integrity="sha256-sCexhaKpAfuqulKjtSY7V9H7QT0TCN90H+Y5NlmqOUE="
