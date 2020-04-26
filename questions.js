@@ -73,4 +73,6 @@ function endQuiz() {
   // clear the question
   // save the score in localStorage
   clearInterval(window.createTimer);
+  document.getElementById("question").innerHTML = "";
+  handleEndQuiz();
 }
